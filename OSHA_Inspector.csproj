@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>OSHA_Inspector</AssemblyName>
     <Description>ResetAccidentGauge</Description>
-    <Version>0.0.1</Version>
+    <Version>0.1.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
     <RestoreAdditionalProjectSources>
@@ -23,12 +23,19 @@
   <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>..\..\..\Steam\steamapps\common\IXION\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="BulwarkStudios.Stanford">
-      <HintPath>..\..\..\Steam\steamapps\common\IXION\BepInEx\interop\BulwarkStudios.Stanford.dll</HintPath>
+      <HintPath>..\..\..\Steam\steamapps\common\IXION\BepInEx\unhollowed\BulwarkStudios.Stanford.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Il2Cppmscorlib">
-      <HintPath>..\..\..\Steam\steamapps\common\IXION\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+      <HintPath>..\..\..\Steam\steamapps\common\IXION\BepInEx\unhollowed\Il2Cppmscorlib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>..\..\..\Steam\steamapps\common\IXION\BepInEx\core\UnhollowerBaseLib.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
 </Project>
